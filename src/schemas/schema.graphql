@@ -1,0 +1,25 @@
+type Pizza {
+    id: Int
+    name: String
+    description: String
+    pictureURL: String
+    priceUSD: Float
+    priceEUR: Float
+}
+
+input OrderInput {
+    pizzazIds: [Int]!
+    address: String
+    name: String
+}
+
+type Order {
+    pizzazIds: [Int]
+    address: String
+    cost: Float
+}
+
+type UserInput {
+    login: String
+    password: String
+}
