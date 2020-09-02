@@ -1,3 +1,5 @@
+import {process} from "node/process";
+
 let express = require('express');
 let {graphqlHTTP} = require('express-graphql');
 import typeDefs from './schemas.js';
@@ -15,4 +17,4 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true,
 
 }));
-app.listen(3001);
+app.listen(process.env.PORT || 3001);

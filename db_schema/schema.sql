@@ -1,6 +1,6 @@
 CREATE TABLE public.pizzas
 (
-    id integer NOT NULL DEFAULT nextval('pizzas_id_seq'::regclass),
+    id serial NOT NULL,
     name text NOT NULL,
     description text,
     "pictureURL" text,
