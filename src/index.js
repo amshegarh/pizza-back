@@ -1,4 +1,4 @@
-import {process} from "node/process";
+import process from "process";
 
 let express = require('express');
 let {graphqlHTTP} = require('express-graphql');
